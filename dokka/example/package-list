@@ -1,0 +1,6 @@
+$dokka.format:jekyll
+$dokka.linkExtension:md
+
+example
+greeteer
+
