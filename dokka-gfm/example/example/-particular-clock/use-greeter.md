@@ -3,4 +3,4 @@
 
 
 # useGreeter  
-
+Uses provider [greeter]()fun [useGreeter](use-greeter.md)(greeter: [Greeter](../../greeteer/-greeter/index.md))

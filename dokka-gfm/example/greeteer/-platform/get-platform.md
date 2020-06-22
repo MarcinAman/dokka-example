@@ -3,4 +3,4 @@
 
 
 # getPlatform  
-
+fun [getPlatform](get-platform.md)(): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)

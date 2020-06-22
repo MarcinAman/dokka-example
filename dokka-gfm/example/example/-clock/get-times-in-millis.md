@@ -3,4 +3,4 @@
 
 
 # getTimesInMillis  
-
+JVM function to retrieve MillisNativefun [getTimesInMillis](get-times-in-millis.md)(): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)

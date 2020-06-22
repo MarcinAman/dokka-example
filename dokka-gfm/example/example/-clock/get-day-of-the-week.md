@@ -3,4 +3,4 @@
 
 
 # getDayOfTheWeek  
-
+open fun [getDayOfTheWeek](get-day-of-the-week.md)(): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)

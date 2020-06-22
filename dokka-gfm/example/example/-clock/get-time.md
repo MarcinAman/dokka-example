@@ -3,4 +3,4 @@
 
 
 # getTime  
-
+fun [getTime](get-time.md)(): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)

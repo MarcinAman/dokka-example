@@ -3,4 +3,4 @@
 
 
 # ringBell  
-
+Rings bell [times]()fun [ringBell](ring-bell.md)(times: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html))

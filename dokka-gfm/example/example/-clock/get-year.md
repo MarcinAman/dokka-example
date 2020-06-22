@@ -3,4 +3,4 @@
 
 
 # getYear  
-
+fun [getYear](get-year.md)(): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)

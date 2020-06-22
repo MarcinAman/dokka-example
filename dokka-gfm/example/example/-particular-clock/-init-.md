@@ -3,4 +3,4 @@
 
 
 # init  
-
+fun [init](-init-.md)(clockDay: [ClockDays](../-clock-days/index.md))

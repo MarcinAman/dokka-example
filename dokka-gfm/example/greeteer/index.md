@@ -10,9 +10,9 @@
 
 | | |
 |---|---|
-| [Executor](-executor/index.md)| |
-| [Greeter](-greeter/index.md)| |
-| [Platform](-platform/index.md)| |
+| [Executor](-executor/index.md)| class [Executor](-executor/index.md)|
+| [Greeter](-greeter/index.md)| class [Greeter](-greeter/index.md)|
+| [Platform](-platform/index.md)| class [Platform](-platform/index.md)|
 
 
 

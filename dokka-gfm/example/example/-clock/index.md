@@ -61,19 +61,19 @@ Custom authoropen class [Clock](index.md)(**int**: [Int](https://kotlinlang.org/
 
 | | |
 |---|---|
-| [equals](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/equals.html)| |
-| [extension](extension.md)| |
-| [foo](foo.md)| |
-| [getDayOfTheWeek](get-day-of-the-week.md)| |
-| [getTime](get-time.md)| |
-| [getTimesInMillis](get-times-in-millis.md)| |
-| [getYear](get-year.md)| |
-| [hashCode](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/hash-code.html)| |
-| [onlyJsFunction](only-js-function.md)| |
-| [onlyJVMFunction](only-j-v-m-function.md)| |
-| [onlyNativeFunction](only-native-function.md)| |
-| [threeParams](three-params.md)| |
-| [toString](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/to-string.html)| |
+| [equals](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/equals.html)| open operator override fun [equals](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/equals.html)(other: [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)Custom equals functionopen operator override fun [equals](equals.md)(other: [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)|
+| [extension](extension.md)| Below goes the extension function for intJS implementation for extension functionJVM implementation for extension functionNative implementation for extension functionfun [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html).[extension](extension.md)(): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)|
+| [foo](foo.md)| Extension function with generic nullable parameterfun [T](foo.md) : [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)? [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html).[foo](foo.md)(bar: [T](foo.md)?)|
+| [getDayOfTheWeek](get-day-of-the-week.md)| open fun [getDayOfTheWeek](get-day-of-the-week.md)(): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)|
+| [getTime](get-time.md)| fun [getTime](get-time.md)(): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)|
+| [getTimesInMillis](get-times-in-millis.md)| JVM function to retrieve MillisNativefun [getTimesInMillis](get-times-in-millis.md)(): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)|
+| [getYear](get-year.md)| fun [getYear](get-year.md)(): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)|
+| [hashCode](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/hash-code.html)| open override fun [hashCode](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/hash-code.html)(): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)|
+| [onlyJsFunction](only-js-function.md)| fun [onlyJsFunction](only-js-function.md)(): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)|
+| [onlyJVMFunction](only-j-v-m-function.md)| Documentation for onlyJVMFunction on... wait for it... ...JVM!fun [onlyJVMFunction](only-j-v-m-function.md)(): [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)|
+| [onlyNativeFunction](only-native-function.md)| fun [onlyNativeFunction](only-native-function.md)(): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)|
+| [threeParams](three-params.md)| Adds three integersJS implementation for threeParams functionSample function with three paramsfun [threeParams](three-params.md)(a: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), b: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), c: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)|
+| [toString](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/to-string.html)| open override fun [toString](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/to-string.html)(): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)|
 
 
 
