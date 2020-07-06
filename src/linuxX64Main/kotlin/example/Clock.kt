@@ -41,6 +41,9 @@ actual open class Clock actual constructor(val int: Int, val string: String) {
     actual fun threeParams(a: Int, b: Int, c: Int) = a + b + c
 
     actual fun <T> Int.foo(bar: T?): Unit = Unit
+    actual var property: String
+        get() = TODO("Not yet implemented")
+        set(value) {}
 }
 
 fun main() {

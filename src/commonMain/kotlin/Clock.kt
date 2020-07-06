@@ -20,6 +20,8 @@ package example
  */
 expect open class Clock(int: Int, string: String) {
 
+    var property: String
+
     /**
      * Set the custom name with default time
      * @param string name of the clock
