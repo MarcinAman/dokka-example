@@ -1,6 +1,0 @@
-$dokka.format:gfm
-$dokka.linkExtension:md
-
-example
-greeteer
-

@@ -1,9 +1,10 @@
 import org.jetbrains.dokka.gradle.DokkaTask
+import java.net.URL
 
 plugins {
     id("java")
-    id("org.jetbrains.kotlin.multiplatform") version "1.4-M2-eap-70"
-    id("org.jetbrains.dokka") version "0.11.0-SNAPSHOT"
+    id("org.jetbrains.kotlin.multiplatform") version "1.3.72"
+    id("org.jetbrains.dokka") version "1.4.0-SNAPSHOT"
 }
 
 group = "org.jetbrains.dokka"
@@ -58,54 +59,46 @@ kotlin {
 }
 
 tasks {
-    val dokkaOutputDir = "dokka"
+    val dokkaOutputDir = File("dokka")
 
     val clean = getByName("clean", Delete::class){
         delete(rootProject.buildDir)
         delete(dokkaOutputDir)
     }
 
-    val dokka by getting(DokkaTask::class) {
+    val dokkaHtml by getting(DokkaTask::class) {
         dependsOn(clean)
 
-        outputDirectory = dokkaOutputDir
-        outputFormat = "html"
-
+        outputDirectory.set(dokkaOutputDir)
 
         dokkaSourceSets {
-            val commonMain by creating {}
-            val jvmAndJsSecondCommonMain by creating{}
-            val jsMain by creating {
-                includes = listOf("src/jsMain/resources/doc.md")
+            val jsMain by getting {
+                includes.from(listOf("src/jsMain/resources/doc.md"))
 
-                samples = listOf("src/jsMain/resources/Samples.kt")
+                samples.from(listOf("src/jsMain/resources/Samples.kt"))
 
                 sourceLink {
-                    path = "src/jsMain/kotlin"
-                    url = "https://github.com/kamilok1965/dokka-example/tree/master/src/jsMain/kotlin"
-                    lineSuffix = "#L"
+                    localDirectory.set(File("src/jsMain/kotlin"))
+                    remoteUrl.set(URL("https://github.com/kamilok1965/dokka-example/tree/master/src/jsMain/kotlin"))
                 }
             }
 
-            val jvmMain by creating {
-                includes = listOf("src/jvmMain/resources/doc.md")
+            val jvmMain by getting {
+                includes.from(listOf("src/jvmMain/resources/doc.md"))
 
-                samples = listOf("src/jsMain/resources/Samples.kt")
+                samples.from(listOf("src/jsMain/resources/Samples.kt"))
 
                 sourceLink {
-                    path = "src/jvmMain/kotlin"
-                    url = "https://github.com/kamilok1965/dokka-example/tree/master/src/jvmMain/kotlin"
-                    lineSuffix = "#L"
+                    localDirectory.set(File("src/jvmMain/kotlin"))
+                    remoteUrl.set(URL("https://github.com/kamilok1965/dokka-example/tree/master/src/jvmMain/kotlin"))
                 }
             }
 
-            val linuxX64Main by creating {
+            val linuxX64Main by getting {
                 sourceLink {
-                    path = "src/linuxX64Main/kotlin"
-                    url = "https://github.com/kamilok1965/dokka-example/tree/master/src/linuxX64Main/kotlin"
-                    lineSuffix = "#L"
+                    localDirectory.set(File("src/linuxX64Main/kotlin"))
+                    remoteUrl.set(URL("https://github.com/kamilok1965/dokka-example/tree/master/src/linuxX64Main/kotlin"))
                 }
-                platform = "native"
             }
         }
     }

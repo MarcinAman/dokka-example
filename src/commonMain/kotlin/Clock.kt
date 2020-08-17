@@ -53,6 +53,7 @@ expect open class Clock(int: Int, string: String) {
     /**
      * Extension function with generic nullable parameter
      *
+     *
      * @receiver Simple number
      * @param bar parameter comment
      */
@@ -62,3 +63,16 @@ expect open class Clock(int: Int, string: String) {
     fun getTimesInMillis(): String
     fun getYear(): String
 }
+
+///**
+// * [name] is classname
+// */
+//data class ClassC(val name: String){
+//    fun m(){}
+//}
+//
+//fun TestClass.testFunction(): String = "XD"
+
+//typealias Generic<T> = String
+//
+//typealias NestedGeneric<D> = String
