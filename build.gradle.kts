@@ -4,7 +4,16 @@ import java.net.URL
 plugins {
     id("java")
     id("org.jetbrains.kotlin.multiplatform") version "1.3.72"
-    id("org.jetbrains.dokka") version "1.4.0-SNAPSHOT"
+    id("org.jetbrains.dokka") version "1.4.10.2"
+}
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath("org.jetbrains.dokka:dokka-base:1.4.10.2")
+    }
 }
 
 group = "org.jetbrains.dokka"
@@ -100,6 +109,10 @@ tasks {
                     remoteUrl.set(URL("https://github.com/kamilok1965/dokka-example/tree/master/src/linuxX64Main/kotlin"))
                 }
             }
+        }
+
+        pluginConfiguration<org.jetbrains.dokka.base.DokkaBase, org.jetbrains.dokka.base.DokkaBaseConfiguration> {
+            customStyleSheets = listOf(file("logo-styles.css"))
         }
     }
 }
